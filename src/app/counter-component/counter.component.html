@@ -1,0 +1,3 @@
+<div #counter (click)="animateCounter ? stopCounter() : startCounter(counter)">
+  <div *ngFor="let number of counterArray">{{ number }}</div>
+</div>
