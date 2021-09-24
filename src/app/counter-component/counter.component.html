@@ -1,3 +1,13 @@
-<div *ngFor="let klass of sequenceClasses" class="{{ klass }} number-column">
+<span
+  *ngFor="let klass of sequenceClasses.digits"
+  class="{{ klass }} number-column"
+>
   <div *ngFor="let number of counterArray" class="number-row">{{ number }}</div>
-</div>
+</span>
+<span>.</span>
+<span
+  *ngFor="let klass of sequenceClasses.decimals"
+  class="{{ klass }} number-column"
+>
+  <div *ngFor="let number of counterArray" class="number-row">{{ number }}</div>
+</span>
