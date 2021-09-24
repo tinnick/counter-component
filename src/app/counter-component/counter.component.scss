@@ -4,14 +4,24 @@
 }
 
 :host {
-  display: block;
-  width: 1rem;
-  height: 1rem;
+  font-size: 24px;
+  display: flex;
+  width: min-content;
+  height: 1em;
   overflow: hidden;
 }
 
-.wrapper > div {
-  display: grid;
-  place-self: center;
-  height: 1rem;
+.number {
+  &-column {
+    display: block;
+    width: min-content;
+    height: 1em;
+    overflow: hidden;
+  }
+
+  &-row {
+    display: grid;
+    place-self: center;
+    height: 1em;
+  }
 }

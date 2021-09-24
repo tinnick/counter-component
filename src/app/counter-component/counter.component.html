@@ -1,3 +1,3 @@
-<div #counter (click)="animateCounter ? stopCounter() : startCounter(counter)">
-  <div *ngFor="let number of counterArray">{{ number }}</div>
+<div *ngFor="let klass of sequenceClasses" class="{{ klass }} number-column">
+  <div *ngFor="let number of counterArray" class="number-row">{{ number }}</div>
 </div>
